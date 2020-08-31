@@ -1,0 +1,29 @@
+.button {
+    height: 42px;
+    padding: 0 24px;
+    position: relative;
+
+    background: #83F6B1;
+    color: #282A3B;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+
+    &::after {
+        content: "";
+        width: 75px;
+        height: 28px;
+        left: 0;
+        position: absolute;
+        
+        background: #83F6B1;
+        opacity: 0.4;
+        filter: blur(40px);
+        border-radius: 5px;
+    }
+}
+
+.modal .button {
+    margin: 1.2rem 0;
+}
